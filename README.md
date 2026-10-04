@@ -45,7 +45,7 @@ Reviewer
 Memory
    ↓
 Git Commit
-## Key Features
+** ## Key Features **
 Requirement Planning
 
 The Planner analyzes the user's natural-language requirement and creates a structured project plan containing:
