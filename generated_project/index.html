@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modern weather dashboard">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="app">
+        <section class="hero">
+            <p class="eyebrow">LIVE WEATHER</p>
+            <h1>Weather Dashboard</h1>
+            <p>Search a city to see its current weather conditions.</p>
+        </section>
+
+        <section class="search-panel">
+            <form id="weatherForm">
+                <label class="sr-only" for="cityInput">City</label>
+                <input
+                    id="cityInput"
+                    type="text"
+                    placeholder="Enter a city, e.g. Kolkata"
+                    autocomplete="off"
+                    required
+                >
+                <button id="searchButton" type="submit">
+                    Search
+                </button>
+            </form>
+        </section>
+
+        <section id="status" class="status" role="status"
+            aria-live="polite"></section>
+
+        <section id="weatherCard" class="weather-card hidden">
+            <div class="weather-header">
+                <div>
+                    <span class="label">CURRENT WEATHER</span>
+                    <h2 id="locationName">—</h2>
+                </div>
+
+                <div id="conditionIcon" class="weather-icon">☀</div>
+            </div>
+
+            <div class="temperature-row">
+                <strong id="temperature">—</strong>
+                <span>°C</span>
+            </div>
+
+            <p id="condition" class="condition">—</p>
+
+            <div class="metrics">
+                <article>
+                    <span>Humidity</span>
+                    <strong id="humidity">—</strong>
+                </article>
+
+                <article>
+                    <span>Wind speed</span>
+                    <strong id="windSpeed">—</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
