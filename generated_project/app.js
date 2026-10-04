@@ -71,7 +71,7 @@ async function fetchWeather(latitude, longitude) {
         `?latitude=${latitude}` +
         `&longitude=${longitude}` +
         "&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m" +
-        "&timezone=auto";
+        "&daily=weather_code,temperature_2m_max&timezone=auto";
 
     const response = await fetch(url);
 
@@ -116,6 +116,8 @@ async function searchWeather(city) {
         conditionIcon.textContent = icon;
 
         weatherCard.classList.remove("hidden");
+
+        updateFiveDayForecast(weather);
         setStatus("Weather updated successfully.");
     } catch (error) {
         setStatus(
@@ -139,3 +141,99 @@ form.addEventListener("submit", event => {
 
     searchWeather(city);
 });
+
+
+// ========================================================
+// 5-DAY FORECAST
+// ========================================================
+
+function renderForecast(forecastData) {
+    const forecastElement = document.getElementById("forecast");
+
+    if (!forecastElement) {
+        return;
+    }
+
+    forecastElement.innerHTML = "";
+
+    forecastData.slice(0, 5).forEach((day) => {
+        const card = document.createElement("article");
+        card.className = "forecast-card";
+
+        const condition = day.condition || "Unknown";
+        const date = day.date || "Forecast";
+        const temperature = Number.isFinite(day.temperature)
+            ? day.temperature
+            : "--";
+
+        card.innerHTML = `
+            <h3>${date}</h3>
+            <div class="forecast-icon" role="img" aria-label="${condition}">
+                ${getForecastIcon(condition)}
+            </div>
+            <div class="forecast-temperature">${temperature}°</div>
+            <div class="forecast-condition">${condition}</div>
+        `;
+
+        forecastElement.appendChild(card);
+    });
+}
+
+
+function getForecastIcon(condition) {
+    const value = String(condition || "").toLowerCase();
+
+    if (value.includes("storm") || value.includes("thunder")) {
+        return "⛈️";
+    }
+    if (value.includes("rain") || value.includes("drizzle")) {
+        return "🌧️";
+    }
+    if (value.includes("snow") || value.includes("sleet")) {
+        return "❄️";
+    }
+    if (value.includes("partly") || value.includes("mostly cloudy")) {
+        return "⛅";
+    }
+    if (value.includes("cloud") || value.includes("overcast")) {
+        return "☁️";
+    }
+    if (value.includes("fog") || value.includes("mist")) {
+        return "🌫️";
+    }
+    return "☀️";
+}
+
+function buildFiveDayForecast(weather) {
+    const dates = weather.daily?.time || [];
+    const codes = weather.daily?.weather_code || [];
+    const maxTemps = weather.daily?.temperature_2m_max || [];
+
+    return dates.slice(0, 5).map((date, index) => {
+        const code = codes[index];
+        const descriptionResult =
+            typeof weatherDescription === "function"
+                ? weatherDescription(code)
+                : ["Weather"];
+        const condition = Array.isArray(descriptionResult)
+            ? descriptionResult[0]
+            : descriptionResult;
+
+        return {
+            date,
+            temperature: Number.isFinite(maxTemps[index])
+                ? Math.round(maxTemps[index])
+                : null,
+            condition,
+        };
+    });
+}
+
+function updateFiveDayForecast(weather) {
+    if (!weather || !weather.daily) {
+        return;
+    }
+
+    const forecastDays = buildFiveDayForecast(weather);
+    renderForecast(forecastDays);
+}

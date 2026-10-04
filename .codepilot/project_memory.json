@@ -1,0 +1,250 @@
+{
+  "projects": {
+    "build a weather dashboard": {
+      "project_type": "weather",
+      "files": [
+        "index.html",
+        "styles.css",
+        "app.js"
+      ],
+      "last_updated": "2026-10-04T23:07:19.822345",
+      "execution_history": [
+        {
+          "timestamp": "2026-10-04T23:07:19.807020",
+          "passed": true,
+          "summary": "Generated project passed automated execution checks."
+        }
+      ],
+      "review_history": [
+        {
+          "timestamp": "2026-10-04T23:07:19.822345",
+          "approved": true,
+          "summary": "Project passed review.",
+          "issues": []
+        }
+      ]
+    },
+    "build a modern weather dashboard using html, css, and vanilla javascript. requirements: - search weather by city. - show temperature, humidity, wind speed, and weather condition. - responsive modern u": {
+      "project_type": "weather",
+      "files": [
+        "index.html",
+        "styles.css",
+        "app.js"
+      ],
+      "last_updated": "2026-10-04T23:17:34.066110",
+      "last_validation_result": "Generated project passed all automated execution checks.",
+      "executor_passed": true,
+      "executor_attempts": 1,
+      "review_attempts": 0,
+      "execution_history": [
+        {
+          "timestamp": "2026-10-04T23:17:33.258280",
+          "passed": true,
+          "summary": "Generated project passed all automated execution checks."
+        }
+      ],
+      "review_history": [
+        {
+          "timestamp": "2026-10-04T23:17:33.281136",
+          "approved": true,
+          "summary": "Generated project passed all automated execution checks.",
+          "issues": []
+        }
+      ],
+      "git_commit": "de503a7 feat: generate weather project",
+      "git_repository": true
+    },
+    "weather": {
+      "project_type": "weather",
+      "files": [
+        "index.html",
+        "styles.css",
+        "app.js"
+      ],
+      "project_id": "weather",
+      "last_updated": "2026-10-05T02:03:14.676584",
+      "execution_history": [
+        {
+          "timestamp": "2026-10-05T01:11:56.809406",
+          "passed": true,
+          "summary": "Generated project passed all automated execution checks."
+        },
+        {
+          "timestamp": "2026-10-05T01:15:12.103388",
+          "passed": true,
+          "summary": "Generated project passed all automated execution checks."
+        },
+        {
+          "timestamp": "2026-10-05T01:16:55.890623",
+          "passed": true,
+          "summary": "Generated project passed all automated execution checks."
+        },
+        {
+          "timestamp": "2026-10-05T01:22:36.775913",
+          "passed": true,
+          "summary": "Generated project passed all automated execution checks."
+        },
+        {
+          "timestamp": "2026-10-05T01:26:43.101298",
+          "passed": true,
+          "summary": "Local generic review passed."
+        },
+        {
+          "timestamp": "2026-10-05T01:30:45.067798",
+          "passed": true,
+          "summary": "Local generic review passed."
+        },
+        {
+          "timestamp": "2026-10-05T01:37:55.433173",
+          "passed": true,
+          "summary": "Local generic review found issues."
+        },
+        {
+          "timestamp": "2026-10-05T01:40:08.104851",
+          "passed": true,
+          "summary": "Local generic review passed."
+        },
+        {
+          "timestamp": "2026-10-05T01:57:34.416741",
+          "passed": false,
+          "summary": "Generated project failed automated execution checks.\nMaximum execution attempts reached."
+        },
+        {
+          "timestamp": "2026-10-05T02:03:14.442183",
+          "passed": true,
+          "summary": "Generated project passed all automated execution checks."
+        }
+      ],
+      "review_history": [
+        {
+          "timestamp": "2026-10-05T01:11:56.823654",
+          "approved": true,
+          "summary": "Generated project passed all automated execution checks.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:15:12.117336",
+          "approved": true,
+          "summary": "Generated project passed all automated execution checks.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:16:55.909259",
+          "approved": true,
+          "summary": "Generated project passed all automated execution checks.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:22:36.796001",
+          "approved": true,
+          "summary": "Generated project passed all automated execution checks.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:26:43.114291",
+          "approved": true,
+          "summary": "Local generic review passed.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:30:45.085498",
+          "approved": true,
+          "summary": "Local generic review passed.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:37:55.450100",
+          "approved": false,
+          "summary": "Local generic review found issues.",
+          "issues": [
+            "Weather 5-day forecast implementation is incomplete: forecast HTML changed for current request"
+          ]
+        },
+        {
+          "timestamp": "2026-10-05T01:40:08.121905",
+          "approved": true,
+          "summary": "Local generic review passed.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:57:34.432559",
+          "approved": true,
+          "summary": "Generated project failed automated execution checks.\nMaximum execution attempts reached.",
+          "issues": [
+            "AUTOMATED EXECUTOR ERRORS:\n- Weather Dashboard does not appear to call a weather API.\n- Weather Dashboard does not appear to display humidity.\n- Weather Dashboard does not appear to display wind.\n\nAUTOMATED EXECUTOR WARNINGS:\n- Weather Dashboard does not contain a recognizable weather API provider.\n\nEXECUTOR SUMMARY:\nGenerated project failed automated execution checks."
+          ]
+        },
+        {
+          "timestamp": "2026-10-05T02:03:14.459208",
+          "approved": true,
+          "summary": "Generated project passed all automated execution checks.",
+          "issues": []
+        }
+      ],
+      "last_validation_result": "Generated project passed all automated execution checks.",
+      "executor_passed": true,
+      "executor_attempts": 1,
+      "review_attempts": 0,
+      "git_commit": "7df30b8 feat: generate weather project",
+      "git_repository": true,
+      "git_commit_error": "On branch main\nYour branch is ahead of 'origin/main' by 1 commit.\n  (use \"git push\" to publish your local commits)\n\nChanges not staged for commit:\n  (use \"git add <file>...\" to update what will be committed)\n  (use \"git restore <file>...\" to discard changes in working directory)\n\tmodified:   ../agent/graph.py\n\tmodified:   ../agent/prompts.py\n\tmodified:   ../agent/states.py\n\tmodified:   ../agent/tools.py\n\tmodified:   ../pyproject.toml\n\tmodified:   ../uv.lock\n\nUntracked files:\n  (use \"git add <file>...\" to include in what will be committed)\n\t../.codepilot/\n\t../agent/executor.py\n\t../agent/executor_node.py\n\t../agent/git_checkpoint_node.py\n\t../agent/git_context.py\n\t../agent/git_context_node.py\n\t../agent/git_diff.py\n\t../agent/git_manager.py\n\t../agent/git_recovery.py\n\t../agent/history.py\n\t../agent/memory.py\n\t../agent/rag.py\n\t../graph_backup..py\n\nno changes added to commit (use \"git add\" and/or \"git commit -a\")"
+    },
+    "todo": {
+      "project_type": "todo",
+      "files": [
+        "index.html",
+        "styles.css",
+        "app.js"
+      ],
+      "project_id": "todo",
+      "last_updated": "2026-10-05T01:50:58.942386",
+      "execution_history": [
+        {
+          "timestamp": "2026-10-05T01:41:17.194784",
+          "passed": true,
+          "summary": "Local Todo review passed."
+        },
+        {
+          "timestamp": "2026-10-05T01:46:24.352761",
+          "passed": false,
+          "summary": "Generated project failed automated execution checks.\nMaximum execution attempts reached."
+        },
+        {
+          "timestamp": "2026-10-05T01:50:58.908801",
+          "passed": false,
+          "summary": "Generated project failed automated execution checks.\nMaximum execution attempts reached."
+        }
+      ],
+      "review_history": [
+        {
+          "timestamp": "2026-10-05T01:41:17.211576",
+          "approved": true,
+          "summary": "Local Todo review passed.",
+          "issues": []
+        },
+        {
+          "timestamp": "2026-10-05T01:46:24.374898",
+          "approved": true,
+          "summary": "Generated project failed automated execution checks.\nMaximum execution attempts reached.",
+          "issues": [
+            "AUTOMATED EXECUTOR ERRORS:\n- Weather Dashboard does not appear to call a weather API.\n- Weather Dashboard does not appear to display temperature.\n- Weather Dashboard does not appear to display humidity.\n- Weather Dashboard does not appear to display wind.\n- Weather Dashboard does not appear to display condition.\n- Weather Dashboard does not appear to implement a loading state.\n\nAUTOMATED EXECUTOR WARNINGS:\n- Weather Dashboard does not contain a recognizable weather API provider.\n\nEXECUTOR SUMMARY:\nGenerated project failed automated execution checks."
+          ]
+        },
+        {
+          "timestamp": "2026-10-05T01:50:58.923710",
+          "approved": true,
+          "summary": "Generated project failed automated execution checks.\nMaximum execution attempts reached.",
+          "issues": [
+            "AUTOMATED EXECUTOR ERRORS:\n- Weather Dashboard does not appear to call a weather API.\n- Weather Dashboard does not appear to display temperature.\n- Weather Dashboard does not appear to display humidity.\n- Weather Dashboard does not appear to display wind.\n- Weather Dashboard does not appear to display condition.\n- Weather Dashboard does not appear to implement a loading state.\n\nAUTOMATED EXECUTOR WARNINGS:\n- Weather Dashboard does not contain a recognizable weather API provider.\n\nEXECUTOR SUMMARY:\nGenerated project failed automated execution checks."
+          ]
+        }
+      ],
+      "last_validation_result": "Generated project failed automated execution checks.\nMaximum execution attempts reached.",
+      "executor_passed": false,
+      "executor_attempts": 3,
+      "review_attempts": 2,
+      "git_commit": "58adbfc feat: generate todo project",
+      "git_repository": true
+    }
+  }
+}
